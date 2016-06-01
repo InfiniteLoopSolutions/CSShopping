@@ -34,8 +34,8 @@ public class AppTest extends TestCase {
 		assertTrue(calculated == expected);
 	}
 
-	public void testBannana() {
-		Basket basket = new Basket(new String[] { "Bannana" });
+	public void testBanana() {
+		Basket basket = new Basket(new String[] { "Banana" });
 
 		double expected = 0.20;
 		double calculated = basket.calculateValue();
@@ -98,13 +98,13 @@ public class AppTest extends TestCase {
 	}
 
 	public void testThreeItem() {
-		Basket basket = new Basket(new String[] { "Apple", "Apple", "Bannana" });
+		Basket basket = new Basket(new String[] { "Apple", "Apple", "Banana" });
 
 		assertTrue(basket.calculateValue() == 0.90);
 	}
 
 	public void testMultipleItem() {
-		Basket basket = new Basket(new String[] { "Apple", "Apple", "Bannana", "Lime", "Lime", "Lime", "Lime", "Lime",
+		Basket basket = new Basket(new String[] { "Apple", "Apple", "Banana", "Lime", "Lime", "Lime", "Lime", "Lime",
 				"Melon", "Melon", "Melon" });
 
 		assertTrue(basket.calculateValue() == 2.50);
