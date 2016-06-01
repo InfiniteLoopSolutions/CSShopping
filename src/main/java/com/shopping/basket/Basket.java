@@ -8,7 +8,7 @@ public class Basket {
 	
 	private static final String LIME = "Lime";
 	private static final String MELON = "Melon";
-	private static final String BANNANA = "Bannana";
+	private static final String BANANA = "Banana";
 	private static final String APPLE = "Apple";
 	
 	private ProductLists productList;
@@ -42,7 +42,7 @@ public class Basket {
 		switch(fruitName){
 		case APPLE :
 			return new AppleValueImpl(fruit);
-		case BANNANA :
+		case BANANA :
 			return new BannanaValueImpl(fruit);
 		case MELON :
 			return new MelonValueImpl(fruit);
@@ -62,8 +62,8 @@ public class Basket {
 			
 			case APPLE:				
 				products.put(APPLE, new Fruit.Builder(fruit, 0.35).type(fruit).build());				
-			case BANNANA :
-				products.put(BANNANA, new Fruit.Builder(fruit, 0.20).type(fruit).build());				
+			case BANANA :
+				products.put(BANANA, new Fruit.Builder(fruit, 0.20).type(fruit).build());				
 			case MELON :
 				products.put(MELON, new Fruit.Builder(fruit, 0.50).type(fruit).build());				
 			case LIME :
